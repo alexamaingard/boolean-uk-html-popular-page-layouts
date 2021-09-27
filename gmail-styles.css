@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: lightcoral;
+}
+
+.search-bar {
+    grid-area: search-bar;
+    background-color: lightcyan;
+}
+
+.user-menu-bar {
+    grid-area: user-menu;
+    background-color: lightgoldenrodyellow;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: lightgray;
+}
+
+.emails {
+    grid-area: emails;
+    background-color: lightgreen;
+}
+
+.quick-settings {
+    grid-area:  quick-settings;
+    background-color: lightpink;
+}
+
+.shortcuts {
+    grid-area: shortcuts;
+    background-color: lightsalmon;
+    font-size: 5%;
+
+}
+
+.container {
+    height: 100vh;
+    text-align: center;
+    font-size: 80%;
+
+    display: grid;
+    grid-template:
+        "logo   search-bar user-menu user-menu" .5fr
+        "menu   emails quick-settings  shortcuts" 9.5fr/
+        10% 70% 15% 5%;
+}

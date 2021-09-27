@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: lightsalmon;
+}
+
+.search-bar {
+    grid-area: search-bar;
+    background-color: lightseagreen;
+}
+
+.user-menu {
+    grid-area: user-menu;
+    background-color: lightskyblue;
+}
+
+#header {
+    margin-bottom: 5px;
+
+    grid-area: header;
+
+    display: grid;
+    grid-template: 
+        "logo   search-bar  user-menu"  1fr/
+        10% 30% 60%;
+
+}
+
+.user {
+    grid-area: user;
+    background-color: lightsteelblue;
+}
+
+.feed {
+    grid-area: feed;
+    background-color: lightyellow;
+}
+
+.news {
+    grid-area: news;
+    background-color: lightpink;
+}
+
+.container {
+    height: 100vh;
+    margin: 0 15%;
+    text-align: center;
+
+    display: grid;
+    grid-template:
+        "header header  header" .4fr
+        "user   feed    news" 9.5fr/
+        20% 50% 30%;
+}
